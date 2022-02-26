@@ -13,9 +13,9 @@ var tax = subtotal / 16
 var final = subtotal + tax
 
 document.write(hotdogs + " hotdogs      " + hotdogs * 3.75 + "\n")
-document.write(fries   + " fries      "   + fries * 2.00   + "\n")
-document.write(sodas   + " sodas      "   + sodas * 1.80   + "\n")
-document.write("subtotal        "         + subtotal       + "\n")
-document.write("discount        "         + discount       + "\n")
-document.write("tax         "             + tax            + "\n")
-document.write("total       " + final)
+document.write(fries   + " fries        " + fries   * 2.00 + "\n")
+document.write(sodas   + " sodas        " + sodas   * 1.80 + "\n")
+document.write("subtotal                " + subtotal       + "\n")
+document.write("discount                " + discount       + "\n")
+document.write("tax                     " + tax            + "\n")
+document.write("total                   " + final)
