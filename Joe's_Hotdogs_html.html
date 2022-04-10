@@ -23,13 +23,23 @@
             var tax   = subtotal / 16
             var final = subtotal + tax - discount
 
-            document.write(hotdogs + " hotdogs      " + hotdogs * 3.75 + "<br>")
-            document.write(fries   + " fries        " + fries   * 2.00 + "<br>")
-            document.write(sodas   + " sodas        " + sodas   * 1.80 + "<br>")
-            document.write("subtotal                " + subtotal       + "<br>")
-            document.write("discount                " + discount       + "<br>")
-            document.write("tax                     " + tax            + "<br>")
-            document.write("total                   " + final)
+            if (hotdogs == 1) {
+                document.write("1 hotdog: $3.75")
+            } else {
+                document.write(hotdogs + " hotdogs: $" + hotdogs * 3.75 + "<br>")
+            }
+            
+            if (sodas == 1) {
+                document.write("1 soda: $1.80")
+            } else {
+                document.write(sodas   + " sodas: " + sodas   * 1.80 + "<br>")
+            }
+            
+            document.write(fries   + " fries: $" + fries   * 2.00 + "<br>")
+            document.write("subtotal: $" + subtotal       + "<br>")
+            document.write("discount: $" + discount       + "<br>")
+            document.write("tax: $" + tax            + "<br>")
+            document.write("total: $" + final)
         </script>
     </body>
 </html>
